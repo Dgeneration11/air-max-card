@@ -1,4 +1,4 @@
-/*----- MENU -----*/
+
 const showMenu = (toggleId,navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,7 +11,7 @@ const showMenu = (toggleId,navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*----- CAMBIO COLORS -----*/
+
 const sizes = document.querySelectorAll('.size__tallas');
 const colors = document.querySelectorAll('.sneaker__color');
 const sneaker = document.querySelectorAll('.sneaker__img');

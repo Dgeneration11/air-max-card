@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-/*===== VARIABLES CSS Y SASS =====*/
-/*Varibles sass*/
-/*Variables css*/
-/*===== Colores =====*/
 :root {
-  --first-color: #A29596;
-  --primary: #A29596;
-  --second-color: #33303D;
+  --first-color: #a29596;
+  --primary: #a29596;
+  --second-color: #33303d;
   --black-color: #111111;
-  --white-color: #FFF;
+  --white-color: #fff;
 }
 
-/*===== Fuente y tipografia =====*/
 :root {
-  --body-font: 'Roboto', sans-serif;
+  --body-font: "Roboto", sans-serif;
   --biggest-font-size: 1.5rem;
   --big-font-size: 1.5rem;
   --normal-font-size: 0.938rem;
@@ -29,7 +24,6 @@
   }
 }
 
-/*===== z index =====*/
 :root {
   --z-back: -10;
   --z-normal: 1;
@@ -38,10 +32,11 @@
   --z-modal: 1000;
 }
 
-/*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,7 +46,10 @@ body {
   color: var(--black-color);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -65,7 +63,6 @@ a {
   text-decoration: none;
 }
 
-/*=====  LAYOUT =====*/
 .bd-grid {
   max-width: 1200px;
   margin-left: 1rem;
@@ -81,18 +78,17 @@ a {
   background-color: var(--white-color);
 }
 
-/*===== PAGES =====*/
 .nav {
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 968px) {
@@ -105,8 +101,8 @@ a {
     height: 100%;
     padding: 2rem;
     z-index: var(--z-fixed);
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -123,23 +119,20 @@ a {
   cursor: pointer;
 }
 
-/*Aparecer menu*/
 .show {
   left: 0;
 }
 
-/*===== Home =====*/
 .home {
   height: calc(100vh - 3rem);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1.5fr;
-      grid-template-rows: 1fr 1.5fr;
-      grid-template-areas: 'sneaker';
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-areas: "sneaker";
   overflow: hidden;
 }
 
-/*===== Sneaker =====*/
 .sneaker {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -148,11 +141,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 2rem 0;
   position: relative;
 }
@@ -162,8 +155,8 @@ a {
   height: 240px;
   background-color: var(--primary);
   border-radius: 50%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sneaker__img {
@@ -175,10 +168,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
   opacity: 0;
   -webkit-filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
-          filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
+  filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
 }
 
 .sneaker__img.shows {
@@ -195,14 +188,14 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 }
 
 .sneaker__color.active {
   border: 2px solid var(--white-color);
   -webkit-box-shadow: 0 0 2px black;
-          box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px black;
 }
 
 .sneaker__colors-one {
@@ -213,7 +206,6 @@ a {
   background-color: var(--black-color);
 }
 
-/*===== Data =====*/
 .data {
   margin-bottom: 1.5rem;
 }
@@ -225,7 +217,7 @@ a {
 
 .data__title {
   font-size: var(--biggest-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .data__description {
@@ -237,11 +229,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-/*===== Size =====*/
 .size__title {
   font-size: var(--normal-font-size);
   margin-bottom: 1rem;
@@ -256,11 +247,11 @@ a {
 .size__tallas {
   width: 30px;
   height: 30px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-size: var(--smaller-font-size);
   text-align: center;
   line-height: 30px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -269,7 +260,6 @@ a {
   color: var(--white-color);
 }
 
-/*===== Cant =====*/
 .cant__title {
   font-size: var(--normal-font-size);
   margin-bottom: 1rem;
@@ -282,18 +272,17 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: var(--primary);
   color: var(--white-color);
-  padding: .5rem;
-  border-radius: .25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
 }
 
-/*===== Preci =====*/
 .preci {
   position: fixed;
   left: 0;
@@ -303,16 +292,16 @@ a {
   background-color: var(--white-color);
   border-radius: 1.5rem 1.5rem 0 0;
   -webkit-box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
-          box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
+  box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .preci__title {
@@ -324,10 +313,9 @@ a {
   background-color: var(--primary);
   color: var(--white-color);
   padding: 1.25rem 3.125rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-/*===== MEDIA QUERIS =====*/
 @media screen and (min-width: 968px) {
   body {
     margin: 0;
@@ -350,18 +338,18 @@ a {
   .home {
     height: 100vh;
     -ms-grid-columns: max-content max-content;
-        grid-template-columns: -webkit-max-content -webkit-max-content;
-        grid-template-columns: max-content max-content;
+    grid-template-columns: -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content;
     -ms-grid-rows: max-content;
-        grid-template-rows: -webkit-max-content;
-        grid-template-rows: max-content;
+    grid-template-rows: -webkit-max-content;
+    grid-template-rows: max-content;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-column-gap: 6rem;
-            column-gap: 6rem;
+    column-gap: 6rem;
   }
   .sneaker__figure {
     width: 430px;
@@ -381,8 +369,8 @@ a {
   }
   .info {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .data {
     margin-bottom: 2.5rem;
@@ -405,10 +393,10 @@ a {
     position: initial;
     background-color: initial;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .preci__title {
     color: var(--black-color);
